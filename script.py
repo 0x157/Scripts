@@ -229,6 +229,7 @@ def unpacking_ghidra() -> str:
 def final_ghidra_function():
     def check_for_ghidra():
         usr = os.getlogin()
+        clearing = lambda: os.system("clear")
         FILES = subprocess.check_output(["ls", f"/home/{usr}/Downloads"])
         check = FILES[::].decode("utf-8").strip()
         ghidra = f"ghidra_10.1.5_PUBLIC_20220726.zip"
