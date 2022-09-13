@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 import subprocess, requests
 import os, sys
 from datetime import datetime
@@ -152,7 +154,7 @@ def getting_ghidra():
     
     try:
         os.system("clear")
-        print(f"[*]Trying to Get Ghidra")
+        print(f"[ * ] Trying to Get Ghidra")
         sleep(2)
         subprocess.call(["wget", "install" ,f"{LINK}"])
 
@@ -171,7 +173,7 @@ def installing_ghidra() -> bool:
                 subprocess.call(["apt", "install", "openjdk-11-jdk", "-y"])
                 clearing()
                 sleep(3)
-                print(f"Installed JDK-11\n[+] Everything Is OK")
+                print(f"Installed JDK-11\n[ + ] Everything Is OK")
 
             except Exception as error:
                 print(f"Could Not Install JDK --> {str(error)}")
@@ -219,7 +221,7 @@ def unpacking_ghidra() -> str:
     unzip()
 
     try:
-        print(f"[*] Trying to Unpack Ghidra")
+        print(f"[ * ] Trying to Unpack Ghidra")
         subprocess.call(["unzip", "ghidra_10.1.5_PUBLIC_20220726.zip"])
 
     except:
@@ -304,4 +306,4 @@ if __name__ == "__main__":
     sleep(2)
     os.system("clear")
     main()
-
+    print(f"[ {current} ] Ev3rything W3NT W3LL")
