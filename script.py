@@ -133,10 +133,14 @@ class InstallingPython:
                     if number == 0xA:
                         clearing()
                         print(f"[\33[36m***\33[39m] Done Installing {number} Modules [\33[36m***\33[39m]")
-                        sleep(2)
+                        sleep(5)
+                        clearing()
+                         
 
             except Exception as error:
                 print(f"Could not Install Modules\nReason --> {str(error)}")
+                sleep(5)
+                pass
 
 
         installing_packages()
@@ -147,6 +151,9 @@ def getting_ghidra():
     LINK = f"https://github.com/NationalSecurityAgency/ghidra/releases/download/Ghidra_10.1.5_build/ghidra_10.1.5_PUBLIC_20220726.zip"
     
     try:
+        os.system("clear")
+        print(f"[*]Trying to Get Ghidra")
+        sleep(2)
         subprocess.call(["wget", "install" ,f"{LINK}"])
 
     except:
@@ -163,6 +170,8 @@ def installing_ghidra() -> bool:
             try:
                 subprocess.call(["apt", "install", "openjdk-11-jdk", "-y"])
                 clearing()
+                sleep(3)
+                print(f"Installed JDK-11\n[+] Everything Is OK")
 
             except Exception as error:
                 print(f"Could Not Install JDK --> {str(error)}")
@@ -239,10 +248,12 @@ def final_ghidra_function():
             print(f"Could Not Find Ghidra")
             installing_ghidra()
             unpacking_ghidra()
+            sleep(5)
+            print("[ + ] Successfully Installed Ghidra\nCheck ~/Downloads Directory")
 
 
     check_for_ghidra()
-        
+
 
 def installing_tools():
     try:
@@ -261,16 +272,17 @@ def installing_tools():
         print("[ X ] Could Not Install Certain T00LS")
 
 
-def removing_unwanted():
+def removing_unwanted() -> bool:
     clear = lambda: os.system("clear")
     try:
         subprocess.call(["apt", "autoremove", "-y"])
         sleep(1)
         clear()
+        return True
 
     except Exception as error:
         print(f"[ {error} ] An ERROR has Occured Exiting...")
-        raise SystemExit
+        raise SystemExit 
 
 
 
@@ -287,5 +299,8 @@ def main() -> None:
 
 
 if __name__ == "__main__":
+    print(f"Executing --> \33[32m{__name__}\33[39m")
+    sleep(2)
+    os.system("clear")
     main()
 
