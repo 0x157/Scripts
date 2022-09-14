@@ -93,7 +93,8 @@ class InstallingPython:
                 print("Installed Python3 Pip")
                 
             except:
-                print(f"[ X ] Could Not install Python3 PIP") 
+                print(f"[ X ] Could Not install Python3 PIP\nExiting...") 
+                sleep(2)
                 raise SystemExit
 
 
@@ -270,6 +271,8 @@ def installing_tools():
         subprocess.call(["apt", "install", f"hashcat", "-y"])
         subprocess.call(["apt", "install", f"nmap", "-y"])
         subprocess.call(["apt", "install", f"ncat", "-y"])
+        subprocess.call(["apt", "install", f"aircrack-ng", "-y"])
+        subprocess.call(["apt", "install", f"autopsy", "-y"])
 
     except:
         print("[ X ] Could Not Install Certain T00LS")
@@ -284,9 +287,9 @@ def removing_unwanted() -> bool:
         return True
 
     except Exception as error:
-        print(f"[ {error} ] An ERROR has Occured Exiting...")
+        print(f"[ {error} ] An ERROR has Occured\nExiting...")
+        sleep(2)
         raise SystemExit 
-
 
 
 def main() -> None: 
