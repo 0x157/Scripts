@@ -277,6 +277,22 @@ def installing_tools():
     except:
         print("[ X ] Could Not Install Certain T00LS")
 
+ 
+def installing_misc():
+    try:
+        os.system("clear")
+        sleep(3)
+        print(f"Installing Fun Programs")
+        subprocess.call(["apt", "install", "lolcat"])
+        subprocess.call(["apt", "install", "figlet"])
+        subprocess.call(["apt", "install", "cowsay"])
+        subprocess.call(["apt", "install", "cmatrix"])
+        subprocess.call(["apt", "install", "pi"])
+
+    except Exception as e:
+        print(f"[ X ] Something Went Wrong\n{str(e)}")
+        pass
+    
 
 def removing_unwanted() -> bool:
     clear = lambda: os.system("clear")
