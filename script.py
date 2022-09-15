@@ -64,6 +64,7 @@ def updating():
         
     except:
         print(f"[X] Could Not Update Repositories") 
+        pass
 
 
 class InstallingPython:
