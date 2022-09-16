@@ -13,7 +13,7 @@ Same goes for python3 modules that I tend to use daily and alot in general: bs4,
 
 # Usage
 
-<img height="90" width="80" align="middle" src=https://user-images.githubusercontent.com/102762345/189624756-25459c2e-6f9a-4a45-aa90-55ef3b7e7949.png>
+<img height="90" width="80" align="center" src=https://user-images.githubusercontent.com/102762345/190684335-d8ca7c53-188e-459f-aebc-5b2101e1521c.png>
 
 The only REQUIRNMENT is to have python3 installed and in most cases newer linux systems come pre-installed with it, you do have to run the script with
 sudo priveledges as it navigates throught directories and some subprocess commands do require `root` priveledges.
