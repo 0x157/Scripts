@@ -1,5 +1,5 @@
 
-<h1 aling="center">
+<h1 align="center">
 Linux Python3 Script
 </h1>
 <img height="210" width="200" align="left" src=https://user-images.githubusercontent.com/102762345/190682943-3736e898-ad48-42b2-ac0f-5868705134c1.png><img height="250" width="250" src=https://user-images.githubusercontent.com/102762345/190683367-c9d86f40-43c7-411e-ad22-6f61531f87d3.png>
