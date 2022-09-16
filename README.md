@@ -1,6 +1,6 @@
 # Linux Python3 Script
 
-<img height="200" width="200" align="left" src=https://user-images.githubusercontent.com/102762345/190682943-3736e898-ad48-42b2-ac0f-5868705134c1.png><img height="200" width="200" src=https://user-images.githubusercontent.com/102762345/190682816-ea2bfa21-fdb1-40ab-9209-64224b41c477.png>
+<img height="210" width="200" align="left" src=https://user-images.githubusercontent.com/102762345/190682943-3736e898-ad48-42b2-ac0f-5868705134c1.png><img height="250" width="250" src=https://user-images.githubusercontent.com/102762345/190682816-ea2bfa21-fdb1-40ab-9209-64224b41c477.png>
 
 # About
 Personal Linux Script That Automates Installation For Tools and Python3 Modules.
