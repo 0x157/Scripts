@@ -49,6 +49,8 @@ def check_root():
         raise SystemExit 
 
     else:
+        print(f"[ + ] You are ROOT\nPassing....")
+        sleep(3)
         os.system("clear")
         pass
 
