@@ -66,7 +66,7 @@ def updating():
         sleep(2)
         
     except:
-        print(f"[X] Could Not Update Repositories") 
+        print(f"[ X ] Could Not Update Repositories") 
         pass
 
 
@@ -79,11 +79,11 @@ class InstallingPython:
 
             if version_py == "Python 3":
                 user_version = PYTHON[:13:].decode("utf-8")
-                print(f"You Already Have {user_version} Installed.")
+                print(f"[ + ] You Already Have {user_version} Installed.")
                 sleep(2)
                
         except:
-             print("Python3 Was Not Found")
+             print(f"[ - ] Python3 Was Not Found")
              os.system("clear")
              subprocess.call(["apt", "install", "python3"])
              print(f"Installed Python3")
@@ -91,10 +91,10 @@ class InstallingPython:
 
         def installing_pip():
             try:
-                print(f"Installing Python3 PIP")
+                print(f"[ + ] Installing Python3 PIP")
                 subprocess.call(["apt", "install", "python3-pip"])
                 os.system("clear")
-                print("Installed Python3 Pip")
+                print("[ *** ] Installed Python3 Pip [ *** ]")
                 
             except:
                 print(f"[ X ] Could Not install Python3 PIP\nExiting...") 
