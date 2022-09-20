@@ -153,8 +153,15 @@ class InstallingPython:
 
 
         installing_packages()
-
-
+  
+        
+def getting_ida():
+    return NotImplemented
+      
+        
+def installing_ida():
+    ...
+    
 
 def getting_ghidra():
     LINK = f"https://github.com/NationalSecurityAgency/ghidra/releases/download/Ghidra_10.1.5_build/ghidra_10.1.5_PUBLIC_20220726.zip"
