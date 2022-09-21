@@ -1,3 +1,9 @@
+import subprocess 
+from platform import platform
+import os
+from time import sleep
+from datetime import datetime
+
 
 class IDA:
     def __init__(self):
@@ -12,6 +18,8 @@ class IDA:
 
         change_directory()
 
+    @staticmethod
+    def getting_ida():
 
         link = "https://out7.hex-rays.com/files/idafree80_linux.run"
         try:
@@ -22,5 +30,3 @@ class IDA:
             print(f"{error}")
 
 
-
-ida = IDA() 
