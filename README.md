@@ -34,10 +34,9 @@ Same goes for python3 modules that I tend to use daily and alot in general: bs4,
   𝕌𝕤𝕒𝕘𝕖
 </h1>
 
-<img height="90" width="80" align="center" src=https://user-images.githubusercontent.com/102762345/190684335-d8ca7c53-188e-459f-aebc-5b2101e1521c.png>
-
 The only REQUIRNMENT is to have python3 installed and in most cases newer linux systems come pre-installed with it, you do have to run the script with
 sudo priveledges as it navigates throught directories and some subprocess commands do require `root` priveledges.
 
 Anyone Can Use the Script, I will try to maintain it as much as possible.
 
+<img height="90" width="80" align="center" src=https://user-images.githubusercontent.com/102762345/190684335-d8ca7c53-188e-459f-aebc-5b2101e1521c.png>
