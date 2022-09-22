@@ -5,6 +5,8 @@
 
 ```python
 
+from time import sleep
+
 print(f"Read Below For Instruction's")
 sleep(5)
 raise SystemExit
