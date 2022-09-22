@@ -29,4 +29,10 @@ class IDA:
         except Exception as error:
             print(f"{error}")
 
+            
+def main():
+    return NotImplemented
 
+
+if __name__ == "__main__":
+    main()
