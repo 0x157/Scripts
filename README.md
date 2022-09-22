@@ -30,7 +30,9 @@ The script itself installs popular `cybersecurity` tools like nmap, ncat, medusa
 
 Same goes for python3 modules that I tend to use daily and alot in general: bs4, requests, rich, scapy, pyarmor, cryptography, and python-nmap
 
-# Usage
+<h1 align="center">
+  𝕌𝕤𝕒𝕘𝕖
+</h1>
 
 <img height="90" width="80" align="center" src=https://user-images.githubusercontent.com/102762345/190684335-d8ca7c53-188e-459f-aebc-5b2101e1521c.png>
 
