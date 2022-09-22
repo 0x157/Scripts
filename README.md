@@ -1,6 +1,6 @@
 
 <h1 align="center">
- 𝕃𝕚𝕟𝕦𝕩 ℙ𝕪𝕥𝕙𝕠𝕟𝟛 𝕊𝕔𝕣𝕚𝕡𝕥
+ ℙ𝕪𝕥𝕙𝕠𝕟𝟛 𝕀𝕟𝕤𝕥𝕒𝕝𝕝𝕒𝕥𝕚𝕠𝕟 𝕊𝕔𝕣𝕚𝕡𝕥'𝕤
 </h1>
 
 <img height="150" width="150" align="left" src=https://user-images.githubusercontent.com/102762345/190682943-3736e898-ad48-42b2-ac0f-5868705134c1.png><img height="150" width="150" align="center" src=https://user-images.githubusercontent.com/102762345/190683367-c9d86f40-43c7-411e-ad22-6f61531f87d3.png>
