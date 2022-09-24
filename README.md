@@ -34,6 +34,16 @@ Same goes for python3 modules that I tend to use daily and alot in general: bs4,
   𝕌𝕤𝕒𝕘𝕖
 </h1>
 
+`𝕌𝕡𝕕𝕒𝕥𝕖` 
+
+You can now compile setup.cpp and run the executable, it will intall python3 before main script.
+
+```
+g++ setup.cpp -o setup_python3
+
+```
+
+
 The only REQUIRNMENT is to have python3 installed and in most cases newer linux systems come pre-installed with it, you do have to run the script with
 sudo priveledges as it navigates throught directories and some subprocess commands do require `root` priveledges.
 
