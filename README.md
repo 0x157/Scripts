@@ -28,7 +28,9 @@ Personal Linux Script That Automates Installation For Tools and Python3 Modules.
 
 The script itself installs popular `cybersecurity` tools like nmap, ncat, medusa, john, hashcat and proxychains4.
 
-Same goes for python3 modules that I tend to use daily and alot in general: bs4, requests, rich, scapy, pyarmor, cryptography, and python-nmap
+Same goes for python3 modules that I tend to use daily and alot in general: bs4, requests, rich, scapy, pyarmor, 
+
+cryptography, and python-nmap
 
 <h1 align="center">
   𝕌𝕤𝕒𝕘𝕖
