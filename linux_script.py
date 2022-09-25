@@ -114,7 +114,7 @@ class InstallingPython:
                 final_pip = check_version.strip()
 
                 if final_pip == "pip":
-                    print("You already have PIP3 installed")
+                    print("\n[ + ] You already have PIP3 installed")
                     sleep(2)
                 
             except:
