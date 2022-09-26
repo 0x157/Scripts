@@ -54,7 +54,7 @@ def check_root():
         raise SystemExit 
 
     else:
-        print(f"\n[ + ] You are ROOT\nPassing....")
+        print(f"[ + ] You are ROOT\nPassing....")
         sleep(3)
         os.system("clear")
         pass
@@ -114,7 +114,7 @@ class InstallingPython:
                 final_pip = check_version.strip()
 
                 if final_pip == "pip":
-                    print("\n[ + ] You already have PIP3 installed")
+                    print("[ + ] You already have PIP3 installed")
                     sleep(2)
                 
             except:
@@ -298,7 +298,8 @@ def installing_misc():
     try:
         os.system("clear")
         sleep(3)
-        print(f"Installing Fun Programs")
+        print(f"[ ^^ ] Installing Fun Programs [ ^^ ]")
+        sleep(2)
         subprocess.call(["apt", "install", "lolcat"])
         subprocess.call(["apt", "install", "figlet"])
         subprocess.call(["apt", "install", "cowsay"])
@@ -333,6 +334,7 @@ def main() -> None:
     py.installing_modules()
     final_ghidra_function()
     installing_tools()
+    installing_misc()
     removing_unwanted()
 
 
