@@ -288,6 +288,9 @@ def installing_tools():
         subprocess.call(["apt", "install", f"aircrack-ng", "-y"])
         subprocess.call(["apt", "install", f"autopsy", "-y"])
         subprocess.call(["apt", "install", f"tmux", "-y"])
+        subprocess.call(["apt", "install", f"zsh", "-y"])
+        subprocess.call(["apt", "install", f"ksh", "-y"])
+        subprocess.call(["apt", "install", f"vim", "-y"])
 
     except:
         print("[ X ] Could Not Install Certain T00LS")
