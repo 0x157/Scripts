@@ -31,8 +31,12 @@ class IDA:
 
             
 def main():
-    return NotImplemented
-
+    try:
+        ida = IDA()
+        ida.getting_ida()
+        
+    except:
+        ...
 
 if __name__ == "__main__":
     main()
