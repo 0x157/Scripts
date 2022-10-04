@@ -53,7 +53,7 @@ def check_root():
         raise SystemExit 
 
     else:
-        print(f"[ + ] You are ROOT\nPassing....")
+        print(f"[ + ] You are ROOT [ + ] ")
         sleep(3)
         os.system("clear")
         pass
@@ -95,7 +95,7 @@ class InstallingPython:
         def installing_pip():
             try:
                 print(f"[ + ] Installing Python3 PIP")
-                subprocess.call(["apt", "install", "python3-pip"])
+                subprocess.call(["apt", "install", "python3-pip", "-y"])
                 os.system("clear")
                 print("[ *** ] Installed Python3 Pip [ *** ]")
                 
@@ -263,7 +263,8 @@ def final_ghidra_function():
 
 
         else:
-            print(f"Could Not Find Ghidra")
+            print(f"[ - ] Could Not Find Ghidra [ - ]")
+            sleep(3)
             installing_ghidra()
             unpacking_ghidra()
             sleep(5)
@@ -291,6 +292,7 @@ def installing_tools():
         subprocess.call(["apt", "install", f"zsh", "-y"])
         subprocess.call(["apt", "install", f"ksh", "-y"])
         subprocess.call(["apt", "install", f"vim", "-y"])
+        subprocess.call(["apt", "install", f"code", "-y"])
 
     except:
         print("[ X ] Could Not Install Certain T00LS")
@@ -302,11 +304,11 @@ def installing_misc():
         sleep(3)
         print(f"[ ^^ ] Installing Fun Programs [ ^^ ]")
         sleep(2)
-        subprocess.call(["apt", "install", "lolcat"])
-        subprocess.call(["apt", "install", "figlet"])
-        subprocess.call(["apt", "install", "cowsay"])
-        subprocess.call(["apt", "install", "cmatrix"])
-        subprocess.call(["apt", "install", "pi"])
+        subprocess.call(["apt", "install", "lolcat", "-y"])
+        subprocess.call(["apt", "install", "figlet", "-y"])
+        subprocess.call(["apt", "install", "cowsay", "-y"])
+        subprocess.call(["apt", "install", "cmatrix", "-y"])
+        subprocess.call(["apt", "install", "pi", "-y"])
 
     except Exception as e:
         print(f"[ X ] Something Went Wrong\n{str(e)}")
