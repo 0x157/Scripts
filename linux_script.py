@@ -318,13 +318,14 @@ def installing_misc():
 def removing_unwanted() -> bool:
     clear = lambda: os.system("clear")
     try:
+        print(f"\n[ = ] Removing Unwanted Dependencies [ = ]")
+        sleep(3)
         subprocess.call(["apt", "autoremove", "-y"])
-        sleep(1)
         clear()
         return True
 
     except Exception as error:
-        print(f"[ {error} ] An ERROR has Occured\nExiting...")
+        print(f"[ {error} ] \nAn ERROR has Occured Removing Unwanted Dependencies\nExiting...")
         sleep(2)
         raise SystemExit 
 
@@ -347,4 +348,4 @@ if __name__ == "__main__":
     sleep(2)
     os.system("clear")
     main()
-    print(f"[ {current} ] Ev3rything W3NT W3LL")
+    print(f"[ {current} ] Ev3rything W3NT W3LL [ {current} ]")
