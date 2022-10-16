@@ -29,14 +29,8 @@ class IDA:
         except Exception as error:
             print(f"{error}")
 
-            
-def main():
-    try:
-        ida = IDA()
-        ida.getting_ida()
-        
-    except:
-        ...
+
+# push this to main
 
 if __name__ == "__main__":
     main()
