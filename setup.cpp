@@ -1,6 +1,6 @@
 #include <iostream>
 
-// Need to improve this a bit
+// Dont use this !
 
 using namespace std;
 
