@@ -2,7 +2,7 @@
 
 # --- TO DO ---
 # add options (menu), make separate files for each option, ex: folder for python, tools, external tools that aren't available from APT.
-
+# adding ida soon
 
 import subprocess, requests
 import os, sys
