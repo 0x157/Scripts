@@ -7,7 +7,8 @@
 </p>  
 
 
-<h1></h1>
+<h1>This is a simple Python3 Script that performs "BORING" task automation.
+Its Current features currently include installing very popular cybersecurity tools and Ghidra.</h1>
 
 
 
