@@ -332,6 +332,8 @@ def installing_tools():
         subprocess.call(["apt", "install", f"tcpdump", "-y"])
        
         subprocess.call(["apt", "install", f"code", "-y"])
+        
+        subprocess.call(["apt", "install", f"snort", "-y"])
 
     except:
         print("[ X ] Could Not Install Certain T00LS")
