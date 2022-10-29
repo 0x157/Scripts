@@ -58,7 +58,7 @@ def check_root():
         raise SystemExit 
 
     else:
-        print(f"[ + ] You are ROOT [ + ] ")
+        print(f"\n[ + ] You are ROOT [ + ] ")
         sleep(3)
         os.system("clear")
         pass
@@ -375,21 +375,16 @@ def removing_unwanted() -> bool:
 
 
 def main() -> None: 
-    try:
-        
-        load()
-        check_root()
-        check_connection()
-        updating()
-        py = InstallingPython()
-        py.installing_modules()
-        final_ghidra_function()
-        installing_tools()
-        installing_misc()
-        removing_unwanted()
-
-    except:
-        print(f" [ - ] Something Went Wrong in MAIN")
+    load()
+    check_root()
+    check_connection()
+    updating()
+    py = InstallingPython()
+    py.installing_modules()
+    final_ghidra_function()
+    installing_tools()
+    installing_misc()
+    removing_unwanted()
 
 
 if __name__ == "__main__":
