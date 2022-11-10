@@ -145,16 +145,16 @@ class InstallingPython:
             clearing() 
             modules = [
                 "bs4","requests","cursor","rich","selenium","scapy", "pyarmor", "python-nmap", 
-                "cryptography", "yara"
+                "cryptography", "yara", "pywal"
                 ]
             number = 0x0
 
             try:
-                while number != 10:
+                while number != 11:
                     subprocess.call(["pip", "install", f"{modules[number]}"])
                     number += 0x1
 
-                    if number == 0xA:
+                    if number == 0xB:
                         clearing()
                         print(f"[\33[36m***\33[39m] Done Installing {number} Modules [\33[36m***\33[39m]")
                         sleep(5)
@@ -352,6 +352,7 @@ def installing_misc():
         subprocess.call(["apt", "install", "cowsay", "-y"])
         subprocess.call(["apt", "install", "cmatrix", "-y"])
         subprocess.call(["apt", "install", "pi", "-y"])
+     
 
     except Exception as e:
         print(f"[ X ] Something Went Wrong\n{str(e)}")
