@@ -151,7 +151,7 @@ class InstallingPython:
 
             try:
                 while number != 11:
-                    subprocess.call(["pip", "install", f"{modules[number]}"])
+                    subprocess.call(["pip", "install", f"{modules[number]}", "--user"])
                     number += 0x1
 
                     if number == 0xB:
@@ -175,7 +175,7 @@ def getting_ida():
       
         
 def installing_ida():
-    ...
+    return NotImplemented
     
 
 def getting_ghidra():
