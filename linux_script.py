@@ -336,6 +336,8 @@ def installing_tools():
         subprocess.call(["apt", "install", f"snort", "-y"])
         
         subprocess.call(["apt", "install", f"fcrackzip", "-y"])
+        
+        subprocess.call(["apt", "install", f"fping", "-y"])
 
     except:
         print("[ X ] Could Not Install Certain T00LS")
