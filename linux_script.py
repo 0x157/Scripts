@@ -41,7 +41,7 @@ def load():
         sys.stdout.write(f"[\33[33m{spin[num]}\33[39m] Preparing for Installation {current}")
         sys.stdout.flush()
         sys.stdout.write("\r")
-        sleep(0.3)
+        sleep(0.25)
         num += 0x1
 
         if num == 0x7:
