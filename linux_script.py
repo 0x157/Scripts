@@ -325,8 +325,6 @@ def installing_tools():
        
         subprocess.call(["apt", "install", f"vim", "-y"])
        
-        subprocess.call(["apt", "install", f"code", "-y"])
-       
         subprocess.call(["apt", "install", f"dnsrecon", "-y"])
        
         subprocess.call(["apt", "install", f"tcpdump", "-y"])
