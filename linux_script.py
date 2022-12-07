@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 
 # --- TO DO ---
+# STOP SLACKING ON THIS ???
 # add options (menu), make separate files for each option, ex: folder for python, tools, external tools that aren't available from APT.
 # adding ida soon
 
