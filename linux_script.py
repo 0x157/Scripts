@@ -299,49 +299,26 @@ def installing_tools():
         os.system("clear")
         print(f"[ + ] Trying to install Tools")
         sleep(4)
+
+        tools = [
+            "medusa", "apache2", "john", "proxychains4", "hashcat", "nmap", "ncat", "aircrack-ng",
+            "autopsy", "tmux", "zsh", "ksh", "vim", "dnsrecon", "tcpdump", "code", "snort", "fcrackzip",
+            "fping",
+            ]
+
+        for installing_tools in tools:
+            try:
+                
+                subprocess.call(["apt", "install", f"{installing_tools}"])
+
+            except:
+                pass
         
-        subprocess.call(["apt", "install", f"medusa", "-y"])
-       
-        subprocess.call(["apt", "install", f"apache2", "-y"])
-       
-        subprocess.call(["apt", "install", f"john", "-y"])
-       
-        subprocess.call(["apt", "install", f"proxychains4", "-y"])
-       
-        subprocess.call(["apt", "install", f"hashcat", "-y"])
-       
-        subprocess.call(["apt", "install", f"nmap", "-y"])
-       
-        subprocess.call(["apt", "install", f"ncat", "-y"])
-       
-        subprocess.call(["apt", "install", f"aircrack-ng", "-y"])
-       
-        subprocess.call(["apt", "install", f"autopsy", "-y"])
-       
-        subprocess.call(["apt", "install", f"tmux", "-y"])
-       
-        subprocess.call(["apt", "install", f"zsh", "-y"])
-       
-        subprocess.call(["apt", "install", f"ksh", "-y"])
-       
-        subprocess.call(["apt", "install", f"vim", "-y"])
-       
-        subprocess.call(["apt", "install", f"dnsrecon", "-y"])
-       
-        subprocess.call(["apt", "install", f"tcpdump", "-y"])
-       
-        subprocess.call(["apt", "install", f"code", "-y"])
-        
-        subprocess.call(["apt", "install", f"snort", "-y"])
-        
-        subprocess.call(["apt", "install", f"fcrackzip", "-y"])
-        
-        subprocess.call(["apt", "install", f"fping", "-y"])
 
     except:
         print("[ X ] Could Not Install Certain T00LS")
-
  
+
 def installing_misc():
    
     try:
