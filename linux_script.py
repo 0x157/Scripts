@@ -186,7 +186,7 @@ def getting_ghidra():
         os.system("clear")
         print(f"[ * ] Trying to Get Ghidra")
         sleep(2)
-        subprocess.call(["wget", "install" ,f"{LINK}"])
+        subprocess.call(["wget", f"{LINK}"])
 
     except:
         print("[ X ] Something Went Wrong Getting The Download")
