@@ -292,18 +292,21 @@ def installing_tools():
     try:
         
         os.system("clear")
+       
         print(f"[ + ] Trying to install Tools")
+        
         sleep(4)
 
         tools = [
             "medusa", "apache2", "john", "proxychains4", "hashcat", "nmap", "ncat", "aircrack-ng",
             "autopsy", "tmux", "zsh", "ksh", "vim", "dnsrecon", "tcpdump", "code", "snort", "fcrackzip",
-            "fping",
+            "fping"
             ]
 
         for installing_tools in tools:
+            
             try:
-                
+ 
                 subprocess.call(["apt", "install", f"{installing_tools}"])
 
             except:
