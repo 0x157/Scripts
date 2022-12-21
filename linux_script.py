@@ -4,6 +4,7 @@ import subprocess, requests
 import os, sys
 from datetime import datetime
 from time import sleep
+import getpass
 
 
 now = datetime.now()
@@ -166,13 +167,50 @@ class InstallingPython:
         installing_packages()
   
         
-def getting_ida():
-    return NotImplemented
-      
-        
 def installing_ida():
-    return NotImplemented
     
+    LINK = "https://out7.hex-rays.com/files/idafree82_linux.run"
+    
+    user = getpass.getuser()
+    
+    wanted_dir = f"/home/{user}/Downloads"
+    
+    CURRENT_DIR = subprocess.check_output(["pwd"])
+    DCURRENT_DIR = CURRENT_DIR.decode('utf-8').strip("\n")
+   
+
+    if DCURRENT_DIR != wanted_dir:
+
+        try:
+            print(f"Current DIR --> {DCURRENT_DIR}\nChanging Directory")
+            
+            os.chdir(f"{wanted_dir}")
+
+            check_c = subprocess.check_output(["pwd"])
+            check_f = check_c.decode('utf-8').strip(f"\n")
+
+
+            if check_f == wanted_dir:
+
+                print(f"[+] Directory Changed, Installing IDA")
+
+                os.system("clear")
+
+                sleep(1)
+
+                subprocess.call(["wget", f"{LINK}"])
+
+
+            else:
+                print(f"Could Not Change To The Proper Directory.")  
+
+                raise SystemExit
+            
+
+        except Exception as Error:
+            print(f"{str(Error)}")
+   
+     
 
 def getting_ghidra():
     LINK = f"https://github.com/NationalSecurityAgency/ghidra/releases/download/Ghidra_10.1.5_build/ghidra_10.1.5_PUBLIC_20220726.zip"
@@ -363,6 +401,7 @@ def main() -> None:
     final_ghidra_function()
     installing_tools()
     installing_misc()
+    installing_ida()
     removing_unwanted()
 
 
