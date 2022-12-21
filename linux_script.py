@@ -62,6 +62,7 @@ def check_root():
 
 
 def updating():
+    
     try:
 
         print("Updating Repositories")
@@ -70,7 +71,7 @@ def updating():
         os.system("clear")
         print(f"[ {current} ] Updated Repositories")
         sleep(2)
-        
+      
     except:
         print(f"\n[ X ] Could Not Update Repositories\nPassing ...\n") 
         pass
