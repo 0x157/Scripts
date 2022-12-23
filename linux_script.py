@@ -349,6 +349,8 @@ def installing_tools():
                 subprocess.call(["apt", "install", f"{installing_tools}"])
 
             except:
+                print(f"[-] Something Went Wrong ( TOOLS FUNC )")
+                
                 pass
         
 
