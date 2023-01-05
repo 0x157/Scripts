@@ -167,7 +167,33 @@ class InstallingPython:
 
         installing_packages()
   
-        
+
+
+def installing_brave() -> None:
+
+    payload = """
+
+    sudo apt install curl;
+
+    sudo curl -fsSLo /usr/share/keyrings/brave-browser-archive-keyring.gpg https://brave-browser-apt-release.s3.brave.com/brave-browser-archive-keyring.gpg;
+
+    echo "deb [signed-by=/usr/share/keyrings/brave-browser-archive-keyring.gpg arch=amd64] https://brave-browser-apt-release.s3.brave.com/ stable main"|sudo tee /etc/apt/sources.list.d/brave-browser-release.list;
+
+    sudo apt update;
+
+    sudo apt install brave-browser
+
+    """
+
+
+    os.system(payload)
+
+    sleep(5)
+    
+    print("[+] Installed Brave")
+    
+    
+
 def installing_ida():
     
     LINK = "https://out7.hex-rays.com/files/idafree82_linux.run"
@@ -402,6 +428,7 @@ def main() -> None:
     py = InstallingPython()
     py.installing_modules()
     final_ghidra_function()
+    installing_brave()
     installing_tools()
     installing_misc()
     installing_ida()
