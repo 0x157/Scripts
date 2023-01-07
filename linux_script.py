@@ -171,7 +171,7 @@ class InstallingPython:
 
 def installing_brave() -> None:
 
-    payload = """
+    commands = """
 
     sudo apt install curl;
 
@@ -186,7 +186,7 @@ def installing_brave() -> None:
     """
 
 
-    os.system(payload)
+    os.system(commands)
 
     sleep(5)
     
