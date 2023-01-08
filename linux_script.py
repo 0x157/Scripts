@@ -181,7 +181,7 @@ def installing_brave() -> None:
 
     sudo apt update;
 
-    sudo apt install brave-browser
+    sudo apt install brave-browser -y
 
     """
 
@@ -360,12 +360,12 @@ def installing_tools():
        
         print(f"[ + ] Trying to install Tools")
         
-        sleep(4)
+        sleep(3.5)
 
         tools = [
             "medusa", "apache2", "john", "proxychains4", "hashcat", "nmap", "ncat", "aircrack-ng",
             "autopsy", "tmux", "zsh", "ksh", "vim", "dnsrecon", "tcpdump", "code", "snort", "fcrackzip",
-            "fping", "ffuf", "registry-tools"
+            "fping", "ffuf", "registry-tools", "mysql-client"
             ]
 
         for installing_tools in tools:
@@ -397,7 +397,8 @@ def installing_misc():
         subprocess.call(["apt", "install", "cowsay", "-y"])
         subprocess.call(["apt", "install", "cmatrix", "-y"])
         subprocess.call(["apt", "install", "pi", "-y"])
-     
+        subprocess.call(["apt", "install", "neofetch", "-y"])
+        
 
     except Exception as e:
         print(f"[ X ] Something Went Wrong\n{str(e)}")
