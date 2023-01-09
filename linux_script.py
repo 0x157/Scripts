@@ -398,6 +398,7 @@ def installing_misc():
         subprocess.call(["apt", "install", "cmatrix", "-y"])
         subprocess.call(["apt", "install", "pi", "-y"])
         subprocess.call(["apt", "install", "neofetch", "-y"])
+        subprocess.call(["apt", "install", "piper", "-y"])
         
 
     except Exception as e:
