@@ -447,19 +447,4 @@ if __name__ == "__main__":
     print(f"[ {current} ] Ev3rything W3NT W3LL [ {current} ]")
     
     
-    import subprocess
-import os
-
-
-# def main() -> None:
-
-#     # Add all the programs 
-#     programs = ["piper"]
-
-#     for install_program in programs:
-
-#         subprocess.call([f"{install_program}"])
-
-
-
 
