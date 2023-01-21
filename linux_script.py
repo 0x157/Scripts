@@ -365,7 +365,8 @@ def installing_tools():
         tools = [
             "medusa", "apache2", "john", "proxychains4", "hashcat", "nmap", "ncat", "aircrack-ng",
             "autopsy", "tmux", "zsh", "ksh", "vim", "dnsrecon", "tcpdump", "code", "snort", "fcrackzip",
-            "fping", "ffuf", "registry-tools", "mysql-client", "virtualbox", "netdiscover", "wireshark-qt", "wfuzz", "socat"
+            "fping", "ffuf", "registry-tools", "mysql-client", "virtualbox", "netdiscover", "wireshark-qt", "wfuzz", "socat",
+            "redis-tools"
             ]
 
         for installing_tools in tools:
