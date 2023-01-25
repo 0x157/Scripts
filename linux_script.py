@@ -386,27 +386,25 @@ def installing_tools():
  
 
 def installing_misc():
-   
-    try:
-
-        os.system("clear")
-        print(f"[ ^^^ ] Installing Fun Programs [ ^^^ ]")
-        sleep(2)
-        
-        subprocess.call(["apt", "install", "lolcat", "-y"])
-        subprocess.call(["apt", "install", "figlet", "-y"])
-        subprocess.call(["apt", "install", "cowsay", "-y"])
-        subprocess.call(["apt", "install", "cmatrix", "-y"])
-        subprocess.call(["apt", "install", "pi", "-y"])
-        subprocess.call(["apt", "install", "neofetch", "-y"])
-        subprocess.call(["apt", "install", "piper", "-y"])
-        
-
-    except Exception as e:
-        print(f"[ X ] Something Went Wrong\n{str(e)}")
-        pass
     
+    programs = [
+        "lolcat", "figlet", "cowsay", "cmatrix", "pi", "neofetch", "piper"
+    ]
 
+
+    for program in programs:
+
+        try:
+
+            subprocess.call(["sudo", "apt", "install", f"{program}", "-y"])
+
+
+        except Exception as Error:
+            print(f"Something Went wrong ( MISC FUNCTION )\n{Error}")
+            
+            pass  
+
+        
 def removing_unwanted() -> bool:
     
     clear = lambda: os.system("clear")
