@@ -4,7 +4,6 @@ import subprocess, requests
 import os, sys
 from datetime import datetime
 from time import sleep
-import getpass
 
 
 now = datetime.now()
