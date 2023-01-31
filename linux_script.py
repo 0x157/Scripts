@@ -4,6 +4,7 @@ import subprocess, requests
 import os, sys
 from datetime import datetime
 from time import sleep
+import random
 
 
 now = datetime.now()
@@ -27,24 +28,43 @@ def check_connection() -> bool:
         return True
 
 
-def load():
-
-    spin = ["\33[0;92m▰▱▱▱▱▱▱", "\33[0;92m▰▰▱▱▱▱▱", "\33[0;92m▰▰▰▱▱▱▱", "\33[0;92m▰▰▰▰▱▱▱", "\33[0;92m▰▰▰▰▰▱▱", "\33[0;92m▰▰▰▰▰▰▱", "\33[0;92m▰▰▰▰▰▰▰"]
-    num = 0x0
     
-    while num != 0x7:
+def load() -> None:
+    
+    animation = ["\\", "|", "/", "-", "\\", "|", "/", "-"]
 
-        sys.stdout.write(f"[\33[33m{spin[num]}\33[39m] Preparing for Installation {current}")
+    color_choices = ["1", "2", "3", "4", "5", "6", "7"]
+
+    num = 0
+
+    loops = 0
+
+    while loops != 50:
+        
+        color = random.choice(color_choices)
+
+        sys.stdout.write(f"[ ? ] Starting Script \33[9{color}m{animation[num]}\r")
         sys.stdout.flush()
-        sys.stdout.write("\r")
-        sleep(0.25)
-        num += 0x1
+        
+        num += 1
 
-        if num == 0x7:
-            os.system("clear")
+        if num == 8:
+        
+            num = 0
+
+        
+        sleep(0.12)
+    
+        loops += 1
+
+        if loops == 50:
+            
+            os.system('clear')
+            
             pass
 
 
+        
 def check_root():
         
     print(f"[ *** ] Checking for root [ *** ] ")
