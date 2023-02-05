@@ -385,7 +385,7 @@ def installing_tools():
             "medusa", "apache2", "john", "proxychains4", "hashcat", "nmap", "ncat", "aircrack-ng",
             "autopsy", "tmux", "zsh", "ksh", "vim", "dnsrecon", "tcpdump", "code", "snort", "fcrackzip",
             "fping", "ffuf", "registry-tools", "mysql-client", "virtualbox", "netdiscover", "wireshark-qt", "wfuzz", "socat",
-            "redis-tools", "smbclient", "nbtscan", "gobuster", "hydra"
+            "redis-tools", "smbclient", "nbtscan", "gobuster", "hydra", "freerdp2-x11"
             ]
 
         for installing_tools in tools:
