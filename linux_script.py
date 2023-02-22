@@ -27,7 +27,7 @@ def check_connection() -> bool:
         print("[ + ] Connected")
         return True
 
-
+# if anyone has a better way to do this feel free to open PR
     
 def load() -> None:
     
