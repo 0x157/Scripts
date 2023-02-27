@@ -407,7 +407,7 @@ def installing_tools():
 def installing_misc():
     
     programs = [
-        "lolcat", "figlet", "cowsay", "cmatrix", "pi", "neofetch", "piper", "sl", "duf"
+        "lolcat", "figlet", "cowsay", "cmatrix", "pi", "neofetch", "piper", "sl", "duf", "snapd"
     ]
 
 
