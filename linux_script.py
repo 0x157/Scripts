@@ -213,48 +213,48 @@ def installing_brave() -> None:
     
     
 
-def installing_ida():
+# def installing_ida():
     
-    LINK = "https://out7.hex-rays.com/files/idafree82_linux.run"
+#     LINK = "https://out7.hex-rays.com/files/idafree82_linux.run"
     
-    user = getpass.getuser()
+#     user = getpass.getuser()
     
-    wanted_dir = f"/home/{user}/Downloads"
+#     wanted_dir = f"/home/{user}/Downloads"
     
-    CURRENT_DIR = subprocess.check_output(["pwd"])
-    DCURRENT_DIR = CURRENT_DIR.decode('utf-8').strip("\n")
+#     CURRENT_DIR = subprocess.check_output(["pwd"])
+#     DCURRENT_DIR = CURRENT_DIR.decode('utf-8').strip("\n")
    
 
-    if DCURRENT_DIR != wanted_dir:
+#     if DCURRENT_DIR != wanted_dir:
 
-        try:
-            print(f"Current DIR --> {DCURRENT_DIR}\nChanging Directory")
+#         try:
+#             print(f"Current DIR --> {DCURRENT_DIR}\nChanging Directory")
             
-            os.chdir(f"{wanted_dir}")
+#             os.chdir(f"{wanted_dir}")
 
-            check_c = subprocess.check_output(["pwd"])
-            check_f = check_c.decode('utf-8').strip(f"\n")
-
-
-            if check_f == wanted_dir:
-
-                print(f"[+] Directory Changed, Installing IDA")
-
-                os.system("clear")
-
-                sleep(1)
-
-                subprocess.call(["wget", f"{LINK}"])
+#             check_c = subprocess.check_output(["pwd"])
+#             check_f = check_c.decode('utf-8').strip(f"\n")
 
 
-            else:
-                print(f"Could Not Change To The Proper Directory.")  
+#             if check_f == wanted_dir:
 
-                raise SystemExit
+#                 print(f"[+] Directory Changed, Installing IDA")
+
+#                 os.system("clear")
+
+#                 sleep(1)
+
+#                 subprocess.call(["wget", f"{LINK}"])
+
+
+#             else:
+#                 print(f"Could Not Change To The Proper Directory.")  
+
+#                 raise SystemExit
             
 
-        except Exception as Error:
-            print(f"{str(Error)}")
+#         except Exception as Error:
+#             print(f"{str(Error)}")
    
      
 
@@ -451,7 +451,7 @@ def main() -> None:
     installing_brave()
     installing_tools()
     installing_misc()
-    installing_ida()
+    #installing_ida()
     removing_unwanted()
 
 
