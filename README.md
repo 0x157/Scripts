@@ -1,7 +1,7 @@
 
 
 <h1 align="center">
-   𝗣𝘆𝘁𝗵𝗼𝗻𝟯 𝗔𝘂𝘁𝗼𝗺𝗮𝘁𝗶𝗼𝗻 𝗦𝗰𝗿𝗶𝗽𝘁  
+   Automation Scripts  
 </h1>
  
 <p align="center">
