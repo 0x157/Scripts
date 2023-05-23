@@ -1,5 +1,6 @@
 import os, subprocess
 
+# Script does need to be ran with sudo or root
 
 def install_volatility2() -> None:
     clear = lambda: os.system('clear')
