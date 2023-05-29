@@ -8,7 +8,6 @@ import os
 import subprocess
 import progressBar
 import time
-import threading
 
 def update():
     try:
@@ -22,10 +21,12 @@ def update():
 def install_python2():
     python2_commands = ["apt install -y python2.7", 
                         "apt install -y python-pip python-setuptools build-essential python2.7-dev"]
-
-    subprocess.call(["apt", "install", "-y", "python2.7"],stdout=subprocess.DEVNULL, stderr=subprocess.STDOUT )
-    subprocess.call(["apt", "install", "-y", "python-pip", "python-setuptools", "build-essential", "python2.7-dev" ],stdout=subprocess.DEVNULL, stderr=subprocess.STDOUT )
-
+    
+    try:
+        subprocess.call(["apt", "install", "-y", "python2.7"],stdout=subprocess.DEVNULL, stderr=subprocess.STDOUT )
+        subprocess.call(["apt", "install", "-y", "python-pip", "python-setuptools", "build-essential", "python2.7-dev" ],stdout=subprocess.DEVNULL, stderr=subprocess.STDOUT )
+    except:
+        print("Cloning volatility failed.")
 
 def clone_volatility():
     pass
