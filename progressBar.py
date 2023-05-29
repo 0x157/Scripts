@@ -11,7 +11,7 @@ class progressBar(threading.Thread):
     def __init__(self, message):
          super(progressBar, self).__init__()
          self.kill = False
-         self.stop = False
+         self.done = False
          self.message = message
     
     def setMsg(self, msg):
@@ -21,12 +21,10 @@ class progressBar(threading.Thread):
 
 
     def run(self):
-            global stop
-            global kill
             print(self.message),
             sys.stdout.flush()
             i = 0
-            while self.stop != True:
+            while self.done != True:
                     if (i%4) == 0: 
                         sys.stdout.write('\b/')
                     elif (i%4) == 1: 
@@ -43,4 +41,10 @@ class progressBar(threading.Thread):
             if self.kill == True: 
                 print ('\b\b\b\b ABORT!'),
             else: 
-                print('\b\b\bDone!'),
+                print('\b\b\bDone!')
+    
+    def stop(self):
+         self.done = True
+
+    def abort(self):
+         self.kill = True
