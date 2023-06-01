@@ -16,9 +16,8 @@ class progressBar(threading.Thread):
     
     def setMsg(self, msg):
          self.message = msg
-         sys.stdout.flush()
-         sys.stdout.write(msg)
-
+         print("\b\b\bDone!")
+         print(msg)
 
     def run(self):
             print(self.message),
