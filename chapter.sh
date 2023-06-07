@@ -2,7 +2,7 @@
 echo "Script to setup a github repo for a technical book."
 echo "Creating $1 subdirectories. 1 for each chapter. Pushing to Github."
 
-for i in {1..$1}
+for i in $(seq 1 1 $1)
 do
 	mkdir "ch$i"
 done
