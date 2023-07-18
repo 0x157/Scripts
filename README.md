@@ -28,11 +28,12 @@ this directory contains installation script for volatility 2, reverse engineerin
 general tools, some git shell scripts.
 
 --> This main directory contains my main script that I run every fresh install of OS.
-Minimal to no user interaction is required while the script is being ran, I tried making this very
-verbose by including a lot of log messages on what is happening during run time
-( including CLI progress bars ).Installs most popular cybersecurity tools,
-my favourite GTK theme, certain MISC apps that I like to mess around with.
-After the script is done running feel free to unintall it.
+Minimal to no user interaction is required while the script is being ran,
+I tried making this veryverbose by including a lot of log messages on
+what is happening during run time ( including CLI progress bars ).
+Installs most popular cybersecurity tools, my favourite GTK theme,
+certain MISC apps that I like to mess around with. After the script is done
+running feel free to unintall it.
 
 ```
 
