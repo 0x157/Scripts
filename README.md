@@ -18,6 +18,6 @@
 
 ---
 
-`**Simple repository of scripts that are used to automate the boring things in this case automating installation of tooling used for cybersecurity**`
+**`Simple repository of scripts that are used to automate the boring things in this case automating installation of tooling used for cybersecurity`**
 
 
