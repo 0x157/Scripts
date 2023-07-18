@@ -8,7 +8,7 @@
 </h1>
 
 <h1 align="center">
-  <img height="20" width="175" src="https://img.shields.io/badge/script-passing-FF9FE5">
+  <img height="20" width="145" src="https://img.shields.io/badge/script-passing-FF9FE5">
 </h1>
 
 
