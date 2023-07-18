@@ -36,6 +36,5 @@ certain MISC apps that I like to mess around with. After the script is done
 running feel free to unintall it.
 
 ```
-
-
+**Yes I do not use any security related distro, thats why this project was born.**
 
