@@ -16,6 +16,8 @@
   <img height="30" width="125" src="https://img.shields.io/badge/Language-Python3-D0D38F">
 </h1>
 
+---
 
+`**Simple repository of scripts that are used to automate the boring things in this case automating installation of tooling used for cybersecurity**`
 
 
