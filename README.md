@@ -12,8 +12,8 @@
 ---
 
 <h1 align="center">
-  <img height="35" width="120" src="https://img.shields.io/badge/Script-Passing-FF9FE5">
-  <img height="35" width="120" src="https://img.shields.io/badge/Language-Python3-D0D38F">
+  <img height="30" width="125" src="https://img.shields.io/badge/Script-Passing-FF9FE5">
+  <img height="30" width="125" src="https://img.shields.io/badge/Language-Python3-D0D38F">
 </h1>
 
 
