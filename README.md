@@ -18,7 +18,7 @@
 
 ---
 
-**Simple repository of scripts that are used to automate the boring things in this case automating installation of tooling used for cybersecurity.**
+**Simple repository of scripts that are used to automate the boring things in this case automating installation of tooling used for cybersecurity. Find the directory structure below for more details. Docker support and more features to come.**
 
 ```
 Directory Structure:
